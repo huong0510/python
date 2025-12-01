@@ -1,0 +1,307 @@
+[
+   {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "patientId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "patientName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "total",
+          "type": "uint256"
+        }
+      ],
+      "name": "BillCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "message",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "DebugLog",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "bills",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "patientId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "patientName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "assignedDoctorName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "addressDetail",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "mobile",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "symptoms",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "admitDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "releaseDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "daySpent",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "medicineCost",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "roomCharge",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "doctorFee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherCharge",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "total",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "patientId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "patientName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "assignedDoctorName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "addressDetail",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "mobile",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "symptoms",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "admitDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "releaseDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "daySpent",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "medicineCost",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "roomCharge",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "doctorFee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherCharge",
+          "type": "uint256"
+        }
+      ],
+      "name": "createBill",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getBill",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "patientId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "patientName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "assignedDoctorName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "addressDetail",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "mobile",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "symptoms",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "admitDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "releaseDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "daySpent",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "medicineCost",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "roomCharge",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "doctorFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherCharge",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "total",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct HospitalBillContract.Bill",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBillCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+]

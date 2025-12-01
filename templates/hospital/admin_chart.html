@@ -1,0 +1,14 @@
+{% extends 'hospital/admin_base.html' %}
+{% load static %}
+
+{% block content %}
+<h2 style="text-align:center; margin-top:30px;">Biểu đồ Chi phí Bệnh viện</h2>
+
+{% if message %}
+    <p style="text-align:center; color:red;">{{ message }}</p>
+{% else %}
+    <img src="data:image/png;base64,{{ chart_matplotlib }}" 
+         style="display:block; margin:auto; margin-top:40px; width:80%;">
+{% endif %}
+
+{% endblock %}
