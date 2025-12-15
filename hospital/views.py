@@ -1194,7 +1194,7 @@ def contactus_view(request):
 
 # statistic
 import matplotlib
-matplotlib.use('Agg')  # 🟢 Quan trọng: dùng backend không cần GUI
+matplotlib.use('Agg')  
 import matplotlib.pyplot as plt
 import io, base64
 import pandas as pd
@@ -1235,7 +1235,7 @@ def stacked_area_chart(request):
     doctor = df_grouped['doctorFee']
     other = df_grouped['OtherCharge']
 
-    # Vẽ stacked bar chart
+    # Vẽ stacked bar chart biểu đồ cột chồng
     plt.figure(figsize=(10, 5))
     plt.bar(dates, medicine, label='Medicine Cost')
     plt.bar(dates, room, bottom=medicine, label='Room Charge')
